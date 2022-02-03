@@ -45,6 +45,7 @@
 	}
 	#pageHeader {
 		position: fixed;
+		background-color: transparent;
 	}
 	.logo {
 		max-width: 90px;
