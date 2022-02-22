@@ -23,53 +23,6 @@
 	<link rel="stylesheet" href="css/colors.css">
 	<!-- include the site responsive stylesheet -->
 	<link rel="stylesheet" href="css/responsive.css">
-
-	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.2.js"></script>
-
-	<style type="text/css">
-		#mask {
-			position: absolute;
-			left: 0;
-			top: 0;
-			z-index: 9000;
-			background-color: #26262c;
-			display: none;
-		}
-
-		#boxes .window {
-			position: absolute;
-			left: 0;
-			top: 0;
-			width: 100%;
-			height: 850px;
-			display: none;
-			z-index: 9999;
-			padding: 20px;
-			border-radius: 5px;
-			text-align: center;
-		}
-
-		#boxes #dialog {
-			width: 60%;
-			height: auto;
-			padding: 10px 10px 10px 10px;
-			background-color: #ffffff;
-			font-size: 15pt;
-		}
-
-		.agree:hover {
-			background-color: #D1D1D1;
-		}
-
-		.popupoption:hover {
-			background-color: #D1D1D1;
-			color: green;
-		}
-
-		.popupoption2:hover {
-			color: red;
-		}
-	</style>
 </head>
 
 <body>
@@ -102,7 +55,8 @@
 										<!-- mainNavigation -->
 										<ul class="navbar-nav mainNavigation fwSemi pt-md-2">
 											<li class="nav-item">
-												<a class="nav-link" href="https://lyceumassessments.lk/">Home
+												<a class="nav-link" href="#pageWrapper">Home <span
+														class="sr-only">(current)</span></a>
 												</a>
 											</li>
 											<li class="nav-item">
@@ -151,13 +105,10 @@
 			<section class="introBlock d-flex w-100 position-relative text-white justify-content-center">
 				<div class="carousel">
 					<div class="carousel-inner">
-						<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true"
-							hidden="" checked="checked">
+						<input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
 						<div class="carousel-item"><img src="./images/slide-1-exam-registrations.jpg"></div>
-						<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true"
-							hidden="">
-						<div class="carousel-item"><img
-								src="./images/slide-1-leader-in-the-administration-of-assessments.jpg"></div>
+						<input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+						<div class="carousel-item"><img src="./images/slide-1-leader-in-the-administration-of-assessments.jpg"></div>
 
 						<label for="carousel-3" class="carousel-control prev control-1">‹</label>
 						<label for="carousel-2" class="carousel-control next control-1">›</label>
@@ -312,8 +263,7 @@
 									<h3 class="h6 fontBase font-weight-normal mb-2">
 										<a href="javascript:void(0);">International Examinations </a>
 									</h3>
-									<p>Lyceum Assessments conducts examinations with the international awarding bodies
-										on behalf of Lyceum International School children.</p>
+									<p>Lyceum Assessments conducts examinations with the international awarding bodies on behalf of Lyceum International School children.</p>
 								</article>
 							</div>
 
@@ -464,9 +414,7 @@
 
 						</div>
 						<p>&nbsp;</p>
-						<p class="clientQuote fontAlter text-primary">Candidates are requested to take note of the
-							registration deadline. Registration is completed once you submit the application and
-							completed the relevant payment.</p>
+						<p class="clientQuote fontAlter text-primary">Candidates are requested to take note of the registration deadline. Registration is completed once you submit the application and completed the relevant payment.</p>
 
 					</div>
 				</article>
@@ -495,45 +443,20 @@
 										<header class="titleWrap">
 											<h3 class="mb-5">Download Materials</h3>
 											<ul class="list-unstyled tickList mt-7">
-												<li><a target="_blank"
-														href="./assets/Instructions_and_Guidelines_to_Candidates.pdf">Instructions
-														and Guidelines to Candidates</a></li>
-												<li><a target="_blank"
-														href="./assets/Syllabus_June_2022-IGCSE.pdf">Syllabus June
-														2022-IGCSE</a></li>
-												<li><a target="_blank"
-														href="./assets/Syllabus_June_2022-OL.pdf">Syllabus June
-														2022-OL</a></li>
-												<li><a target="_blank"
-														href="./assets/Syllabus_June_2022-AL.pdf">Syllabus June
-														2022-A/L</a></li>
-												<li><a target="_blank"
-														href="./assets/Easy_Step_Guide_Instructions.pdf">Easy Step Guide
-														Instructions</a></li>
-												<li><a target="_blank"
-														href="./assets/Easy_Step_Guide_Instructions-Video.mp4">Easy Step
-														Guide Instructions-Video</a></li>
-												<li><a target="_blank"
-														href="./assets/Fee_Structure_May_June_2022.pdf">Fee
-														Structure-May/June 2022</a></li>
-												<li><a target="_blank"
-														href="./assets/Cambridge_Final_Exam_Timetable_June_2022_Administrative_zone_4.pdf">Cambridge
-														Final Exam Timetable June 2022 - Administrative zone 4</a></li>
-												<li><a target="_blank"
-														href="./assets/Subject_Entry Amendments_Form.pdf">Subject Entry
-														Amendments Form</a></li>
-												<li><a target="_blank"
-														href="./assets/Personnel_Data_Amendment_Form.pdf">Personal Data
-														Entry Amendments Form </a></li>
-												<li><a target="_blank"
-														href="./assets/Carry_forward_Entry_Rules.pdf">Carry Forward
-														Entry Rules</a></li>
-												<li><a target="_blank" href="./assets/Child_Protection_Policy.pdf">Child
-														Protection Policy</a></li>
-												<li><a target="_blank" href="./assets/Refund_Policy.pdf">Refund
-														Policy</a></li>
-												<li><a target="_blank" href="./assets/Refund_Appication_Form.pdf">Refund
-														Application Form</a></li>
+												<li><a target="_blank" href="./assets/Instructions_and_Guidelines_to_Candidates.pdf">Instructions and Guidelines to Candidates</a></li>
+												<li><a target="_blank" href="./assets/Syllabus_June_2022-IGCSE.pdf">Syllabus June 2022-IGCSE</a></li>
+												<li><a target="_blank" href="./assets/Syllabus_June_2022-OL.pdf">Syllabus June 2022-OL</a></li>
+												<li><a target="_blank" href="./assets/Syllabus_June_2022-AL.pdf">Syllabus June 2022-A/L</a></li>
+												<li><a target="_blank" href="./assets/Easy_Step_Guide_Instructions.pdf">Easy Step Guide Instructions</a></li>
+												<li><a target="_blank" href="./assets/Easy_Step_Guide_Instructions-Video.mp4">Easy Step Guide Instructions-Video</a></li>
+												<li><a target="_blank" href="./assets/Fee_Structure_May_June_2022.pdf">Fee Structure-May/June 2022</a></li>
+												<li><a target="_blank" href="./assets/Cambridge_Final_Exam_Timetable_June_2022_Administrative_zone_4.pdf">Cambridge Final Exam Timetable June 2022 - Administrative zone 4</a></li>
+												<li><a target="_blank" href="./assets/Subject_Entry Amendments_Form.pdf">Subject Entry Amendments Form</a></li>
+												<li><a target="_blank" href="./assets/Personnel_Data_Amendment_Form.pdf">Personal Data Entry Amendments Form </a></li>
+												<li><a target="_blank" href="./assets/Carry_forward_Entry_Rules.pdf">Carry Forward Entry Rules</a></li>
+												<li><a target="_blank" href="./assets/Child_Protection_Policy.pdf">Child Protection Policy</a></li>
+												<li><a target="_blank" href="./assets/Refund_Policy.pdf">Refund Policy</a></li>
+												<li><a target="_blank" href="./assets/Refund_Appication_Form.pdf">Refund Application Form</a></li>
 											</ul>
 										</header>
 
@@ -591,52 +514,23 @@
 
 
 
+		
 
 
-		<!-- Popup Box -->
 		<div id="boxes">
 			<div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
 				<div id="san">
 					<a href="#" class="close agree">
-						<img src="./images/close.png" width="25" style="float:right; ">
+						<img src="close-icon.png" width="25" style="float:right; margin-right: -25px; margin-top: -20px;">
 					</a>
-					<img src="./images/pop.jpg">
+					<img src="san-web-corner.png" width="450">
 				</div>
 			</div>
 			<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
 				id="mask"></div>
 		</div>
-		<!-- Popup Box -->
-
 
 	</div>
-
-	<script type='text/javascript'>
-		$(document).ready(function () {
-			var id = '#dialog';
-			var maskHeight = $(document).height();
-			var maskWidth = $(window).width();
-			$('#mask').css({ 'width': maskWidth, 'height': maskHeight });
-			$('#mask').fadeIn(500);
-			$('#mask').fadeTo("slow", 0.9);
-			var winH = $(window).height();
-			var winW = $(window).width();
-			$(id).css('top', winH / 2 - $(id).height() / 2);
-			$(id).css('left', winW / 2 - $(id).width() / 2);
-			$(id).fadeIn(2000);
-			$('.window .close').click(function (e) {
-				e.preventDefault();
-				$('#mask').hide();
-				$('.window').hide();
-			});
-			$('#mask').click(function () {
-				$(this).hide();
-				$('.window').hide();
-			});
-
-		});
-	</script>
-
 	<!-- include jQuery library -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<!-- include bootstrap popper JavaScript -->

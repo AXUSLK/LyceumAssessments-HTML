@@ -40,7 +40,7 @@
 			position: absolute;
 			left: 0;
 			top: 0;
-			width: 100%;
+			width: 440px;
 			height: 850px;
 			display: none;
 			z-index: 9999;
@@ -50,7 +50,7 @@
 		}
 
 		#boxes #dialog {
-			width: 60%;
+			width: 450px;
 			height: auto;
 			padding: 10px 10px 10px 10px;
 			background-color: #ffffff;
@@ -102,7 +102,8 @@
 										<!-- mainNavigation -->
 										<ul class="navbar-nav mainNavigation fwSemi pt-md-2">
 											<li class="nav-item">
-												<a class="nav-link" href="https://lyceumassessments.lk/">Home
+												<a class="nav-link" href="#pageWrapper">Home <span
+														class="sr-only">(current)</span></a>
 												</a>
 											</li>
 											<li class="nav-item">
@@ -598,9 +599,10 @@
 			<div style="top: 50%; left: 50%; display: none;" id="dialog" class="window">
 				<div id="san">
 					<a href="#" class="close agree">
-						<img src="./images/close.png" width="25" style="float:right; ">
+						<img src="close-icon.png" width="25"
+							style="float:right; margin-right: -25px; margin-top: -20px;">
 					</a>
-					<img src="./images/pop.jpg">
+					<img src="san-web-corner.png" width="450">
 				</div>
 			</div>
 			<div style="width: 2478px; font-size: 32pt; color:white; height: 1202px; display: none; opacity: 0.4;"
@@ -610,33 +612,6 @@
 
 
 	</div>
-
-	<script type='text/javascript'>
-		$(document).ready(function () {
-			var id = '#dialog';
-			var maskHeight = $(document).height();
-			var maskWidth = $(window).width();
-			$('#mask').css({ 'width': maskWidth, 'height': maskHeight });
-			$('#mask').fadeIn(500);
-			$('#mask').fadeTo("slow", 0.9);
-			var winH = $(window).height();
-			var winW = $(window).width();
-			$(id).css('top', winH / 2 - $(id).height() / 2);
-			$(id).css('left', winW / 2 - $(id).width() / 2);
-			$(id).fadeIn(2000);
-			$('.window .close').click(function (e) {
-				e.preventDefault();
-				$('#mask').hide();
-				$('.window').hide();
-			});
-			$('#mask').click(function () {
-				$(this).hide();
-				$('.window').hide();
-			});
-
-		});
-	</script>
-
 	<!-- include jQuery library -->
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<!-- include bootstrap popper JavaScript -->
